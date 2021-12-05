@@ -20,6 +20,8 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
+  zipkin:
+    base-url: http://127.0.0.1:9411/
 
 management:
   endpoints:
