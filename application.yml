@@ -4,6 +4,8 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
+      
+      
   instance:
     hostname: localhost
     leaseRenewalIntervalInSeconds: 1
@@ -27,7 +29,10 @@ spring:
           lower-case-service-id: true
   zipkin:
     base-url: http://127.0.0.1:9411/
-
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
 management:
   endpoints:
     web:
