@@ -1,3 +1,6 @@
+info:
+  foo: bar
+  
 eureka:
   client:
     register-with-eureka: true
